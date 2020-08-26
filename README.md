@@ -1,2 +1,2 @@
 # Tutorial-CloudCompare
-Tutorial elaborado pela equipe da Secretaria de Desenvolvimento Urbano da cidade de São Paulo. Departamento GeoInfo
+Tutorial iniciado pela equipe de GeoInfo com funcioalidades para utilização do software CloudCompare.
