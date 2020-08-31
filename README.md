@@ -4,4 +4,4 @@ CloudCompare é um software de processamento de nuvem de pontos em 3D.
 https://www.danielgm.net/cc/
 
 # Link para o Tutorial
-https://danmizuta.github.io/Tutorial-CloudCompare/
+https://danmizuta.github.io/Tutorial-CloudCompare/tutorial.html
