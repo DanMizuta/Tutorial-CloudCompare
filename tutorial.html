@@ -1,118 +1,732 @@
-<!DOCTYPE html>
-<p><strong>Modelo Digital de Superf&iacute;cie (MDS)</strong></p>
-<p><strong>Prefeitura Municipal de S&atilde;o Paulo, SMDU - GEOSAMPA</strong></p>
-<p><strong>Tutorial b&aacute;sico - Visualizando nuvens de pontos no CloudCompare</strong></p>
-<p>A Prefeitura do Munic&iacute;pio de S&atilde;o Paulo (PMSP) disponibiliza atrav&eacute;s do GEOSAMPA o produto de levantamento realizado com a tecnologia LIDAR (do ingl&ecirc;s "Light Detection Ranging" - apresentada na Wikip&eacute;dia como "tecnologia &oacute;ptica de detec&ccedil;&atilde;o remota que mede propriedades da luz reflectida de modo a obter a dist&acirc;ncia e/ou outra informa&ccedil;&atilde;o a respeito um determinado objecto distante. O m&eacute;todo mais utilizado para determinar a dist&acirc;ncia a um objecto &eacute; a utiliza&ccedil;&atilde;o de&nbsp;<a href="https://pt.wikipedia.org/wiki/Laser" target="Laser">laser</a>&nbsp;pulsado"), o Modelo Digital de Superf&iacute;cie (MDS). Trata-se de modelo tridimensional que retrata as edifica&ccedil;&otilde;es, vegeta&ccedil;&otilde;es, terreno e outras fei&ccedil;&otilde;es atrav&eacute;s de milh&otilde;es de pontos (nuvem de pontos). Cada um destes XX arquivos resultantes deste levantamento representa uma &aacute;rea de aproximadamente 300.000 m2, ultrapassando com frequ&ecirc;ncia 5 milh&otilde;es de pontos. Manipular estes arquivos demanda uma configura&ccedil;&atilde;o de computadores adequada (ver anexo...a produzir?), e devemos esperar resultados compat&iacute;veis com a escala do levantamento (ver metadados); n&atilde;o espere produzir para edifica&ccedil;&otilde;es representadas no levantamento um modelo tridimensional detalhado. O GEOSAMPA disponibiliza tamb&eacute;m o Modelo Digital do Terreno (MDT), que pode ser acessado e trabalhado da mesma forma que aqui apresentamos.</p>
-<p>Voc&ecirc; pode obter mais informa&ccedil;&otilde;es sobre este trabalho e sobre como obter este e outros produtos disponibilizados pela PMSP acessando o Portal do GEOSAMPA, em especial seu tutorial em:</p>
-<p><u><a href="http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx">http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx#</a></u></p>
-<p><u><a href="http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/downloadArquivoOL.aspx?orig=DownloadTutorial&amp;arq=tutorial_mapa.pdf&amp;arqTipo=TUTORIAL">http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/downloadArquivoOL.aspx?orig=DownloadTutorial&amp;arq=tutorial_mapa.pdf&amp;arqTipo=TUTORIAL</a></u> .</p>
-<p>(op&ccedil;&atilde;o: colar aqui informa&ccedil;&otilde;es do tutorial do GEOSAMPA sobre como obter o MDS - atualizar o tutorial? igual ao MDT... - metadados, not&iacute;cias e mais...) e</p>
-<p>Voc&ecirc; vai precisar ..... (colocar aqui texto sobre hardware necess&aacute;rio para poder trabalhar com nossos arquivos no CloudCompare).</p>
-<p>O presente tutorial foi elaborado para oferecer a quem n&atilde;o est&aacute; familiarizado com a manipula&ccedil;&atilde;o de nuvem de pontos, um roteiro introdut&oacute;rio para trabalhar com o MDS do Munic&iacute;pio de S&atilde;o Paulo utilizando o CloudCompare, programa de computador que pode ser obtido gratuitamente em <u><a href="https://www.danielgm.net/cc/">https://www.danielgm.net/cc/</a></u> (aqui sendo utilizado a vers&atilde;o 2.10.2 do produto), e proporciona valiosos recursos para manipula&ccedil;&atilde;o e visualiza&ccedil;&atilde;o de nuvens de pontos.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_21be9359b14c6158.png" alt="" width="195" height="46" name="Imagem 19" border="0" /><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_1ca48a41bba20cc4.png" alt="" width="261" height="84" name="Imagem 1" border="0" /></p>
-<p>CloudCompare, imagens obtidas no endere&ccedil;o eletr&ocirc;nico.</p>
-<p>Organize o ambiente para utilizar o <strong>CloudCompare</strong> no seu computador, baixe os arquivos <strong>MDS_color_3314-164.laz</strong>, <strong>MDS_color_3314-243.laz</strong>, <strong>MDS_color_3314-332.laz</strong> e o <strong>MDS_color_3314-411.laz</strong> e acompanhe o passo a passo.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_7b78ff5eb5739f45.png" alt="" width="561" height="393" name="Figura1" border="0" /></p>
-<p>GEOSAMPA, obtendo os arquivos de trabalho.</p>
-<h3>1. Abrindo arquivos</h3>
-<p>Acesse o <strong>CloudCompare</strong>; em <strong>File &gt; Open</strong> abra caixa de di&aacute;logo e selecione inicialmente o arquivo <strong>MDS_color_3314-243.laz</strong> (observamos que arquivos "las" ou "laz" s&atilde;o formatos equivalentes, este &uacute;ltimo em sua forma compactada); clicar em <strong>Abrir</strong>.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_3f970a5a47b6c1d2.png" alt="" width="567" height="369" name="Imagem 4" border="0" /></p>
-<p>Na caixa de di&aacute;logo <strong>Open LAS File</strong>, em <strong>Standard Fields</strong> vamos deixar apontados apenas os atributos <img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_d060fc4b3fc27ec4.png" alt="" width="102" height="20" name="Imagem 10" border="0" /> e <img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_8f558d56aa492b76.png" alt="" width="87" height="17" name="Imagem 13" border="0" />e clicar em <strong>Apply</strong>.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_a4c9740297a55280.png" alt="" width="567" height="369" name="Imagem 7" border="0" /></p>
-<p>Nova caixa de di&aacute;logo nos &eacute; apresentada, em <strong>Global shift/scale</strong> temos o alerta de que as coordenadas em nosso sistema (UTM-Sirgas 2000 - ver tutorial GEOSAMPA) apresenta valores muito grandes, e que ao importarmos nossos dados sem transladar as coordenadas poder&aacute; resultar em perda de precis&atilde;o em nosso arquivo. Sugere ent&atilde;o valores para o translado, que aceitaremos, assim como <img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_c0647092ae4e8dc5.png" alt="" width="160" height="12" name="Figura2" border="0" /> (preservaremos a informa&ccedil;&atilde;o do translado aplicado nos pontos do arquivo aberto), clicar em <strong>Yes</strong>.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_c24c9da0607fe954.png" alt="" width="567" height="370" name="Imagem 16" border="0" /></p>
-<p>Temos a seguir a imagem do MDS. Vale a pena experimentar a intera&ccedil;&atilde;o com a imagem que podemos ter ao manusear o mouse sobre a &aacute;rea de visualiza&ccedil;&atilde;o; movendo-o com o bot&atilde;o esquerdo pressionado giramos nosso modelo, o "<em>scroll</em>" aproxima e distancia o modelo e movendo o mouse com o bot&atilde;o direito pressionado deslocamos a imagem gerada na tela. Um conjunto de &iacute;cones no lado esquerdo da tela oferecem diversos recursos para alternar modos e &acirc;ngulos de visualiza&ccedil;&atilde;o do modelo, bem intuitivos e semelhantes a outros programas gr&aacute;ficos, tamb&eacute;m para que sejam testados e assimilados atrav&eacute;s da experimenta&ccedil;&atilde;o.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_ce3bdfeacf785065.png" alt="" width="567" height="370" name="Imagem 28" border="0" /></p>
-<h3>2. Explorando o arquivo no "CloudCompare"</h3>
-<p>Na barra lateral esquerda, no quadro <strong>DB Tree</strong> podemos selecionar clicando no arquivo de pontos aberto (&iacute;cone <strong>Nuvem</strong> ao lado) a nuvem de pontos importada . Isto nos mostra algumas caracter&iacute;sticas e recursos dispon&iacute;veis no quadro <strong>Properties</strong>. Observe que ao importar o arquivo foi criado um <strong>Grupo</strong> (&iacute;cone <strong>Pasta</strong> ao lado) com a denomina&ccedil;&atilde;o correspondente ao local onde o arquivo aberto est&aacute; salvo e neste grupo o arquivo aberto foi posicionando. Avan&ccedil;ando um pouco nos conceitos do programa, podemos abrir no <strong>CloudCompare</strong> diversos arquivos simultaneamente, que aparecer&atilde;o no <strong>DB Tree</strong> como se fossem camadas (ou <strong>layers</strong>) , estas poder&atilde;o ser salvas individualmente ap&oacute;s algum procedimento, ou ainda serem todas salvas em &uacute;nico arquivo, refor&ccedil;ando a aplica&ccedil;&atilde;o da ideia de camada, e neste sentido adotaremos o termo.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_91399f8e86504f83.png" alt="" width="567" height="379" name="Imagem 37" border="0" /></p>
-<p>E abaixo (ap&oacute;s "<em>scroll</em>"), demais informa&ccedil;&otilde;es de <strong>Properties</strong>.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_6d0011f7c9a9fba5.png" alt="" width="162" height="166" name="Imagem 40" border="0" /><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_e8763db1c66c4229.png" alt="" width="156" height="100" name="Imagem 43" border="0" /></p>
-<p>Vamos destacar alguns itens:</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.6.2 (Windows)"/>
+	<meta name="author" content="Rony"/>
+	<meta name="created" content="2020-05-11T20:49:00"/>
+	<meta name="changedby" content="Rony"/>
+	<meta name="changed" content="2020-05-11T21:23:00"/>
+	<meta name="AppVersion" content="12.0000"/>
+	<meta name="DocSecurity" content="0"/>
+	<meta name="HyperlinksChanged" content="false"/>
+	<meta name="LinksUpToDate" content="false"/>
+	<meta name="ScaleCrop" content="false"/>
+	<meta name="ShareDoc" content="false"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3cm; margin-right: 3cm; margin-top: 2.5cm; margin-bottom: 2.5cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		h3 { margin-top: 0.49cm; margin-bottom: 0.49cm; direction: ltr; line-height: 100%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		h3.western { font-family: "Times New Roman", serif; font-size: 13pt; font-weight: bold }
+		h3.cjk { font-family: "Times New Roman"; font-size: 13pt; so-language: pt-BR; font-weight: bold }
+		h3.ctl { font-family: "Times New Roman"; font-size: 13pt; font-weight: bold }
+		a:link { color: #0000ff; text-decoration: underline }
+		a:visited { color: #800080; text-decoration: underline }
+	</style>
+</head>
+<body lang="pt-BR" link="#0000ff" vlink="#800080" dir="ltr"><p style="margin-bottom: 0.35cm">
+<font size="4" style="font-size: 14pt"><b>Modelo Digital de
+Superf&iacute;cie (MDS)</b></font></p>
+<p style="margin-bottom: 0.35cm"><font size="4" style="font-size: 14pt"><b>Prefeitura
+Municipal de S&atilde;o Paulo, SMDU - GEOSAMPA</b></font></p>
+<p style="margin-bottom: 0.35cm"><font size="4" style="font-size: 14pt"><b>Tutorial
+b&aacute;sico - Visualizando nuvens de pontos no CloudCompare</b></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0.35cm; line-height: 100%"><font color="#222222"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">A
+Prefeitura do Munic&iacute;pio de S&atilde;o Paulo (PMSP)
+disponibiliza</span></font></font><font size="3" style="font-size: 12pt">
+atrav&eacute;s do GEOSAMPA o produto de levantamento realizado com a
+tecnologia LIDAR </font><font color="#548dd4"><font size="3" style="font-size: 12pt">(do
+ingl&ecirc;s &quot;Light Detection Ranging&quot; -  apresentada na
+Wikip&eacute;dia como &quot;</font></font><font color="#548dd4"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">tecnologia
+&oacute;ptica de detec&ccedil;&atilde;o remota que mede propriedades
+da luz reflectida de modo a obter a dist&acirc;ncia e/ou outra
+informa&ccedil;&atilde;o a respeito um determinado objecto distante.
+O m&eacute;todo mais utilizado para determinar a dist&acirc;ncia a um
+objecto &eacute; a utiliza&ccedil;&atilde;o de&nbsp;</span></font></font><font color="#0000ff"><a href="https://pt.wikipedia.org/wiki/Laser" target="Laser"><font color="#548dd4"><font size="3" style="font-size: 12pt"><span style="text-decoration: none"><span style="background: #ffffff">laser</span></span></font></font></a></font><font color="#548dd4"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">&nbsp;pulsado&quot;)</span></font></font><font color="#222222"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+o Modelo Digital de Superf&iacute;cie (MDS). Trata-se de modelo
+tridimensional que retrata as edifica&ccedil;&otilde;es, vegeta&ccedil;&otilde;es,
+ terreno e outras fei&ccedil;&otilde;es atrav&eacute;s de milh&otilde;es
+de pontos (nuvem de pontos).</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+Cada um destes </span></font></font><font color="#ff0000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">XX</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+arquivos resultantes deste levantamento representa uma &aacute;rea de
+aproximadamente </span></font></font><font color="#ff0000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">300.000</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+m2, ultrapassando com </span></font></font><font color="#ff0000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">frequ&ecirc;ncia
+5 milh&otilde;es de pontos</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+Manipular estes arquivos demanda uma configura&ccedil;&atilde;o de
+computadores adequada (ver anexo...a produzir?), e devemos esperar
+resultados compat&iacute;veis com a escala do levantamento (ver
+metadados); </span></font></font><font color="#ff0000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">n&atilde;o
+espere produzir para edifica&ccedil;&otilde;es representadas no
+levantamento um modelo tridimensional detalhado</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+O GEOSAMPA disponibiliza tamb&eacute;m o Modelo Digital do Terreno
+(MDT), que pode ser acessado e trabalhado da mesma forma que aqui
+apresentamos.</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><font color="#222222"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Voc&ecirc;
+pode obter mais informa&ccedil;&otilde;es sobre este trabalho e sobre
+como obter este e outros produtos disponibilizados pela PMSP
+acessando o Portal do GEOSAMPA, em especial seu tutorial em: </span></font></font>
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#0000ff"><u><a href="http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx"><font size="3" style="font-size: 12pt">http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx#</font></a></u></font></p>
+<p style="margin-bottom: 0.35cm"><font color="#0000ff"><u><a href="http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/downloadArquivoOL.aspx?orig=DownloadTutorial&amp;arq=tutorial_mapa.pdf&amp;arqTipo=TUTORIAL"><font size="3" style="font-size: 12pt">http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/downloadArquivoOL.aspx?orig=DownloadTutorial&amp;arq=tutorial_mapa.pdf&amp;arqTipo=TUTORIAL</font></a></u></font><font size="3" style="font-size: 12pt">
+.</font></p>
+<p style="margin-bottom: 0.35cm"><font color="#ff0000"><font size="3" style="font-size: 12pt">(op&ccedil;&atilde;o:
+colar aqui informa&ccedil;&otilde;es do tutorial do GEOSAMPA sobre
+como obter  o MDS  - atualizar o tutorial? igual ao MDT... -
+metadados, not&iacute;cias e mais...)    e</font></font></p>
+<p style="margin-bottom: 0.35cm; line-height: 100%"><font color="#ff0000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Voc&ecirc;
+vai precisar .....     (colocar aqui texto sobre hardware necess&aacute;rio
+para poder trabalhar com nossos arquivos no CloudCompare).</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt">O
+presente tutorial foi elaborado para oferecer a quem n&atilde;o est&aacute;
+familiarizado com a manipula&ccedil;&atilde;o de nuvem de pontos, um
+roteiro introdut&oacute;rio para trabalhar com o MDS do Munic&iacute;pio
+de S&atilde;o Paulo utilizando o CloudCompare, programa de computador
+que </font><font size="3" style="font-size: 12pt">pode ser obtido
+gratuitamente em </font><font color="#0000ff"><u><a href="https://www.danielgm.net/cc/"><font size="3" style="font-size: 12pt">https://www.danielgm.net/cc/</font></a></u></font><font size="3" style="font-size: 12pt">
+(</font><font size="3" style="font-size: 12pt">aqui sendo utilizado a
+vers&atilde;o 2.10.2 do produto), e proporciona valiosos recursos
+para manipula&ccedil;&atilde;o e visualiza&ccedil;&atilde;o de nuvens
+de pontos</font><font size="3" style="font-size: 12pt">.</font><font size="3" style="font-size: 12pt">
+</font>
+</p>
+<p style="margin-bottom: 0.35cm; line-height: 100%"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_21be9359b14c6158.png" name="Imagem 19" align="bottom" width="195" height="46" border="0"/>
+
+             
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_1ca48a41bba20cc4.png" name="Imagem 1" align="bottom" width="261" height="84" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm; line-height: 100%"><font size="2" style="font-size: 9pt">CloudCompare,
+ imagens obtidas no endere&ccedil;o eletr&ocirc;nico.</font></p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt">Organize
+o ambiente para utilizar o </font><font size="3" style="font-size: 12pt"><b>CloudCompare</b></font><font size="3" style="font-size: 12pt">
+no seu computador, baixe os arquivos </font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-164.laz</b></font><font size="3" style="font-size: 12pt">,
+</font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-243.laz</b></font><font size="3" style="font-size: 12pt">,
+</font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-332.laz</b></font><font size="3" style="font-size: 12pt">
+e o </font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-411.laz</b></font><font size="3" style="font-size: 12pt">
+e acompanhe o passo a passo.</font></p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm; line-height: 100%"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_7b78ff5eb5739f45.png" name="Figura1" align="bottom" width="561" height="393" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm; line-height: 100%"><font size="2" style="font-size: 9pt">GEOSAMPA,
+obtendo os arquivos de trabalho.</font></p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<h3 class="western"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">1.
+Abrindo arquivos</span></font></h3>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Acesse
+o </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">CloudCompare</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">;
+em </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">File
+&gt; Open</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+ abra caixa de di&aacute;logo e selecione inicialmente o arquivo
+</span></font></font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-243.laz</b></font><font size="3" style="font-size: 12pt">
+(</font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">observamos
+que arquivos &quot;las&quot; ou &quot;laz&quot; s&atilde;o formatos
+equivalentes, este &uacute;ltimo em sua forma compactada); clicar em 
+</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Abrir</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_3f970a5a47b6c1d2.png" name="Imagem 4" align="bottom" width="567" height="369" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Na
+caixa de di&aacute;logo </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Open
+LAS File</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+em </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Standard
+Fields</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+vamos deixar apontados apenas os atributos </span></font></font>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_d060fc4b3fc27ec4.png" name="Imagem 10" align="bottom" width="102" height="20" border="0"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+e </span></font></font>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_8f558d56aa492b76.png" name="Imagem 13" align="bottom" width="87" height="17" border="0"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">e
+clicar em </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Apply</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_a4c9740297a55280.png" name="Imagem 7" align="bottom" width="567" height="369" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Nova
+caixa de di&aacute;logo nos &eacute; apresentada, em </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Global
+shift/scale</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+temos o alerta de que as coordenadas em nosso sistema (UTM-Sirgas
+2000 - ver tutorial GEOSAMPA) apresenta valores muito grandes, e que
+ao importarmos nossos dados sem transladar as coordenadas poder&aacute;
+resultar em perda de precis&atilde;o em nosso arquivo. Sugere ent&atilde;o
+valores para o translado, que aceitaremos, assim como </span></font></font>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_c0647092ae4e8dc5.png" name="Figura2" align="bottom" width="160" height="12" border="0"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(preservaremos a informa&ccedil;&atilde;o do translado aplicado nos
+pontos do arquivo aberto), clicar em </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Yes</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_c24c9da0607fe954.png" name="Imagem 16" align="bottom" width="567" height="370" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Temos
+a seguir a imagem do MDS. Vale a pena experimentar a intera&ccedil;&atilde;o
+com a imagem que podemos ter ao manusear o mouse sobre a &aacute;rea
+de visualiza&ccedil;&atilde;o; movendo-o com o bot&atilde;o esquerdo
+pressionado giramos nosso modelo, o &quot;</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><i><span style="background: #ffffff">scroll</span></i></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">&quot;
+aproxima e distancia o modelo e movendo o mouse com o bot&atilde;o
+direito pressionado deslocamos a imagem gerada na tela. Um conjunto
+de &iacute;cones no lado esquerdo da tela oferecem diversos recursos
+para alternar modos e &acirc;ngulos de visualiza&ccedil;&atilde;o do
+modelo, bem intuitivos e semelhantes a outros programas gr&aacute;ficos,
+tamb&eacute;m para que sejam testados e assimilados atrav&eacute;s da
+experimenta&ccedil;&atilde;o.</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_ce3bdfeacf785065.png" name="Imagem 28" align="bottom" width="567" height="370" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<h3 class="western" style="page-break-before: always"><font face="Calibri, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">2.
+Explorando o arquivo no &quot;CloudCompare&quot;</span></font></font></h3>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Na
+barra lateral esquerda, no quadro  </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">DB
+Tree</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+podemos selecionar clicando no arquivo de pontos aberto (&iacute;cone
+ </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Nuvem</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+ao lado) a nuvem de pontos importada . Isto nos mostra algumas
+caracter&iacute;sticas e recursos dispon&iacute;veis no quadro
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+Observe que ao importar o arquivo foi criado um </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Grupo</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(&iacute;cone  </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Pasta</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+ao lado) com a denomina&ccedil;&atilde;o correspondente ao local onde
+o arquivo aberto est&aacute; salvo e neste grupo o arquivo aberto foi
+posicionando. Avan&ccedil;ando um pouco nos conceitos do programa,
+podemos abrir no </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">CloudCompare</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+diversos arquivos simultaneamente, que aparecer&atilde;o no </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">DB
+Tree</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+como se fossem camadas (ou </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">layers</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">)
+, estas poder&atilde;o ser salvas individualmente ap&oacute;s algum
+procedimento, ou ainda serem todas salvas em &uacute;nico arquivo,
+refor&ccedil;ando a aplica&ccedil;&atilde;o da ideia de camada, e
+neste sentido adotaremos o termo.</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_91399f8e86504f83.png" name="Imagem 37" align="bottom" width="567" height="379" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">E
+abaixo (ap&oacute;s &quot;</span></font><font size="3" style="font-size: 12pt"><i><span style="background: #ffffff">scroll</span></i></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">&quot;),
+demais informa&ccedil;&otilde;es de </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">  
+   </span>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_6d0011f7c9a9fba5.png" name="Imagem 40" align="bottom" width="162" height="166" border="0"/>
+<span style="background: #ffffff">
+   </span>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_e8763db1c66c4229.png" name="Imagem 43" align="bottom" width="156" height="100" border="0"/>
+<span style="background: #ffffff">
+</span>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Vamos
+destacar alguns itens:</span></font></p>
 <ul>
-<li>
-<p><strong>Cloud</strong> nos apresenta o n&uacute;mero de pontos da camada selecionada (<strong>Points</strong>) e o translado aplicado nos pontos desta camada (<strong>Global shift</strong>).</p>
-</li>
-<li>
-<p><strong>CC Object</strong> nos traz <strong>Colors</strong>, onde podemos optar entre as possibilidades de visualiza&ccedil;&atilde;o de cor que o arquivo oferece. Em nosso caso temos <strong>None</strong>, <strong>R G B</strong>, e por &uacute;ltimo <strong>Scalar Field</strong> (<strong>Campo Escalar</strong>). Colorir utilizando o <strong>Campo Escalar</strong> se traduz em atribuir uma escala de cores em fun&ccedil;&atilde;o dos valores de determinado atributo, a sua "posi&ccedil;&atilde;o" entre os valores existentes no universo dos pontos da camada.</p>
-</li>
-<li>
-<p><strong>Scalar Field</strong> indica a exist&ecirc;ncia de um &uacute;nico campo escalar dispon&iacute;vel: <strong>Classification</strong>.</p>
-</li>
+	<li><p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Cloud</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	nos apresenta o n&uacute;mero de pontos da camada selecionada
+	(</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Points</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">)
+	e o translado aplicado nos pontos desta camada (</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Global
+	shift</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">).
+	</span></font>
+	</p>
+	<li><p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">CC
+	Object</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	nos traz  </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Colors</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+	onde podemos optar entre as possibilidades de visualiza&ccedil;&atilde;o
+	de cor que o arquivo oferece. Em nosso caso temos </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">None</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+	</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">R
+	G B</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+	e por &uacute;ltimo </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Scalar
+	Field</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	(</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Campo
+	Escalar</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">).
+	Colorir utilizando o </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Campo
+	Escalar</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	se traduz em atribuir uma escala de cores em fun&ccedil;&atilde;o
+	dos valores de determinado atributo, a sua &quot;posi&ccedil;&atilde;o&quot;
+	entre os valores existentes no universo dos pontos da camada.</span></font></p>
+	<li><p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Scalar
+	Field</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	indica a exist&ecirc;ncia de um &uacute;nico campo escalar
+	dispon&iacute;vel: </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Classification</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></p>
 </ul>
-<p>Para ilustrar o conceito de <strong>Campo Escalar</strong>, fazendo a seguinte opera&ccedil;&atilde;o:</p>
-<p>A - Duplicar a camada que estamos trabalhando; com a camada escolhida selecionada clicar em <strong>Edit &gt; Clone</strong>. Este procedimento nos permite experimentar opera&ccedil;&otilde;es na nova camada, preservando a camada original. As fun&ccedil;&otilde;es aplicadas nas camadas n&atilde;o podem ser desfeitas, apesar de s&oacute; alterar o arquivo original se salvarmos a camada modificada com o mesmo nome e formato.</p>
-<p>B - Selecione a camada copiada e clique em <strong>Edit &gt;Scalar fields &gt; Export coordenate(s) to SF(s)</strong>; no quadro que abre, vamos marcar apenas <strong>Z</strong> e clicar <strong>OK</strong>.</p>
-<p>A <img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_9b832ceb152c5573.png" alt="" width="119" height="264" name="Figura3" border="0" /> B <img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_37b1b2d4ff12af3d.png" alt="" width="203" height="262" name="Figura4" border="0" /></p>
-<p>C - Vamos ao resultado; observe que criamos a camada <strong>MDS_color_3314-243 - cloud.clone</strong>. Para esta camada temos em <strong>Scalar Field</strong> agora o campo escalar <strong>Coord.Z</strong> al&eacute;m de <strong>Classification</strong>. Por ter acabado de ser criado <strong>Coord.Z </strong>deve estar como o <strong>Campo escalar</strong> escolhido para esta nova camada. Desabilite a visualiza&ccedil;&atilde;o da camada "<strong> MDS_color_3314-243 - cloud</strong> (clique no quadrado ao lado da camada) e selecione a camada <strong>MDS_color_3314-243 - cloud.clone</strong> (devemos fazer isto pois a camada de cima esconde neste caso, por ter pontos na mesma posi&ccedil;&atilde;o, a camada criada). A figura abaixo representa os pontos com coordenadas Z maiores em tonalidades mais pr&oacute;xima do vermelho, e as mais baixas, do azul. Observe em<strong> Properties &gt; Scalar Field</strong> a op&ccedil;&atilde;o <strong>Coord.Z</strong> ativa.</p>
-<p>C <img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_a6dd809d208b6e07.png" alt="" width="552" height="359" name="Imagem 46" border="0" /></p>
-<p>D - Em <strong>Properties &gt; Color Scale</strong> podemos alterar a escala de cores a ser exibida e em <strong>Properties &gt; SF Display Params</strong> podemos controlar as op&ccedil;&otilde;es de exibi&ccedil;&atilde;o da escala de cores no modelo.</p>
-<p>D<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_7b405a4ab380dc54.png" alt="" width="553" height="242" name="Imagem 22" border="0" /></p>
-<p>E - Em <strong>Properties &gt; </strong><strong>Color Scale</strong> podemos ainda editar ou alternar a escala de cores utilizada (ver figura E1 onde aplicamos <strong>Blue &gt; White &gt; Red</strong>), e em <strong>Properties</strong><em> &gt; </em><strong>SF Display Params</strong> podemos ajustar a aplica&ccedil;&atilde;o da escala de cores no modelo (movendo o "indicador triangular" - ver figura E2), ou restringindo o intervalo de valores para a aplica&ccedil;&atilde;o da escala de cores (movendo o "indicador semi-circular ou circular" - ver figura E3).</p>
-<p>E1<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_3f4bd861854f8a1d.png" alt="" width="547" height="255" name="Imagem 25" border="0" /></p>
-<p>E2<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_4c347a6916038e82.png" alt="" width="547" height="258" name="Figura5" border="0" /></p>
-<p>E3<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_bccc2984523b0164.png" alt="" width="546" height="355" name="Imagem 49" border="0" /></p>
-<p>Vamos aproveitar a &uacute;ltima visualiza&ccedil;&atilde;o obtida para apresentar outro recurso dispon&iacute;vel; ap&oacute;s clicar em <strong>Edit &gt; Scalar fields &gt; Filter By Value</strong> , nos &eacute; oferecida a op&ccedil;&atilde;o <strong>Export</strong>, que produzir&aacute; uma nova camada de "Nuvem de Pontos" com os pontos definidos para serem colorizados anteriormente. Observe que o modo de exibi&ccedil;&atilde;o da camada de origem deste processo foi desabilitado, favorecendo a visualiza&ccedil;&atilde;o imediata do resultado (veja o resultado da redu&ccedil;&atilde;o do n&uacute;mero de pontos em <strong>Property &gt; Cloud</strong>). Fazer este procedimento com a op&ccedil;&atilde;o <strong>Split</strong> divide o arquivo em dois segundo o mesmo crit&eacute;rio anteriormente definido.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_5de3e9206f73f0e9.png" alt="" width="567" height="369" name="Imagem 55" border="0" /></p>
-<p>O MDS disponibilizado pelo GEOSAMPA classificou os pontos da nuvem em fun&ccedil;&atilde;o do tipo de superf&iacute;cie que representa com a seguinte rela&ccedil;&atilde;o de valor:</p>
-<p>2 Ground (terreno)</p>
-<p>5 Vegetation, (vegeta&ccedil;&atilde;o)</p>
-<p>6 Building (edifica&ccedil;&atilde;o)</p>
-<p>9 Utilizado para pontes e viadutos</p>
-<p>19 N&atilde;o classificados</p>
-<p>20 N&atilde;o classificados, junto ao solo</p>
-<p>Para visualizarmos no MDS os pontos de acordo com esta classifica&ccedil;&atilde;o, defina o <strong>Campo Escalar</strong> correspondente em<strong> Properties &gt; Scalar Field</strong> selecionando <strong>Classification</strong> com a camada <strong>MDS_color_3314-243 - cloud </strong>ativa.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_73d63ca603287785.png" alt="" width="567" height="367" name="Figura6" border="0" /></p>
-<p>Observe em <strong>Properties &gt; SF Display Params </strong>que os valores atribuidos ao <strong>Campo Escalar</strong> agora em uso varia de <strong>2.00</strong> a <strong>20.00</strong>. Podemos destacar em cor apenas os pontos classificados como edifica&ccedil;&atilde;o (<strong>6.00</strong>), restringindo o intervalo de valores para a aplica&ccedil;&atilde;o da escala de cores (movendo o "indicador semi-circular ou circular") conforme a seguir:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_b19640be5aafd4b1.png" alt="" width="567" height="368" name="Figura7" border="0" /></p>
-<p>Com o mesmo procedimento vamos selecionar agora para visualiza&ccedil;&atilde;o apenas os pontos classificados como <strong>2.00</strong>, visualizando em cor apenas o terreno. Para poder visualizar o resultado desta nova opera&ccedil;&atilde;o, ajuste a tela de visualiza&ccedil;&atilde;o para obter uma imagem da parte inferior do modelo (isto se faz necess&aacute;rio pois os pontos com outras classifica&ccedil;&otilde;es escondem os pontos selecionados).</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_e072b65b69748467.png" alt="" width="567" height="379" name="Figura8" border="0" /></p>
-<p>Novamente em <strong>Edit &gt; Scalar fields &gt; Filter By Value </strong>e depois <strong>Export </strong>vamos criar uma camada apenas com pontos do terreno. Renomeie esta camada (com um duplo clique sobre o nome da camada) como <strong>Terreno</strong>.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_6e5167266d3cbf42.png" alt="" width="567" height="364" name="Figura9" border="0" /></p>
-<h3>03. Produzindo malha triangular (pol&iacute;gonos)</h3>
-<p>Podemos com a camada <strong>Terreno </strong>gerar uma malha triangular (estamos usando os pontos do terreno por possu&iacute;rem caracter&iacute;sticas mais favor&aacute;veis a gera&ccedil;&atilde;o de malha triangular do que, por exemplo, os classificados como vegeta&ccedil;&atilde;o), mas para n&atilde;o perder a camada <strong>Terreno</strong> vamos fazer antes duas c&oacute;pias dela em <strong>Edit &gt; Clone </strong>(para testarmos op&ccedil;&otilde;es de triangula&ccedil;&atilde;o). Para viabilizar uma melhora na qualidade de visualiza&ccedil;&atilde;o da malha a ser criada, vamos definir antes uma cor clara para todos os pontos desta camada em <strong>Edit &gt; Colors &gt; Set unique</strong>; defina um tom de amarelo como segue:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_e878630e90abe77d.png" alt="" width="567" height="368" name="Figura10" border="0" /></p>
-<p>Com a camada <strong>Terreno.clone</strong> selecionada produzimos a malha triangular em <strong>Edit &gt; Mesh &gt; Dlelaunay2.5D (XY plane)</strong> obtendo caixa de di&aacute;logo para definirmos o tamanho m&aacute;ximo do lado do tri&acirc;ngulo da malha a ser gerada (com a op&ccedil;&atilde;o <strong>0.00</strong> para n&atilde;o aplicar este limite). Vamos simular com a op&ccedil;&atilde;o <strong>0.00</strong> (A) e com <strong>3.00</strong> (B); teremos os resultados (para melhor visualiza&ccedil;&atilde;o da malha triangular, habilite a op&ccedil;&atilde;o de sombreamento em <strong>Display &gt; Shaders &amp; Filters &gt; EDL Shader</strong>; em <strong>Display &gt; Shaders &amp; Filters &gt; Remove Filter </strong>voc&ecirc; pode desabilitar a op&ccedil;&atilde;o de sombreamento):</p>
-<p>A<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_a06062d2a297bd2.png" alt="" width="535" height="360" name="Imagem 34" border="0" /></p>
-<p>B<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_ee086391fa32ca15.png" alt="" width="542" height="349" name="Figura11" border="0" /></p>
-<h3>04. Trabalhando com parte da nuvem de pontos</h3>
-<p>Vamos ajustar nossa tela com uma vista superior (barra de ferramentas <strong>View</strong> - &iacute;cone identificado com 1; ver figura a seguir) de nosso modelo, com o modo perspectiva desabilitado em <strong>Display &gt; Toggle Centered Perspective</strong> ( liga e desliga o modo perspectiva), e depois aproximar para a &aacute;rea de interesse.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_91b5ad9252f35a33.png" alt="" width="335" height="44" name="Imagem 52" border="0" /></p>
-<p>Nosso objetivo agora &eacute; explorar um pouco mais os recursos de manipula&ccedil;&atilde;o e visualiza&ccedil;&atilde;o. Queremos olhar com mais aten&ccedil;&atilde;o uma edifica&ccedil;&atilde;o em particular, o MASP como exemplo (lembre se de fazer este procedimento na c&oacute;pia da camada original para preserv&aacute;-la). Em uma nova camada <strong>MDS_color_3314-243 - cloud.clone </strong>poderemos em <strong>Edit &gt; Segment</strong> delimitar um pol&iacute;gono em torno desta edifica&ccedil;&atilde;o e dividir nossa nuvem de pontos em duas camadas; uma com os pontos internos a este pol&iacute;gono e a outra com os pontos restantes. Em <strong>Edit &gt; Segment</strong>abrimos caixa de ferramenta onde podemos trabalhar conforme a figura:<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_8fcff270e697d424.png" alt="" width="332" height="52" name="Figura12" border="0" /></p>
-<p><strong>1 - </strong>Abre fun&ccedil;&atilde;o de desenhar pol&iacute;gono para referenciar segmenta&ccedil;&atilde;o da nuvem de pontos (bot&atilde;o esquerdo do mouse adiciona pontos ao pol&iacute;gono, o esquerdo encerra a defini&ccedil;&atilde;o do mesmo). Ap&oacute;s definir o tra&ccedil;ado do pol&iacute;gono de corte, se for do nosso interesse um novo &iacute;cone fica dispon&iacute;vel permitindo salvar este pol&iacute;gono em nova (<img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_e11276cc7072aaff.png" alt="" width="18" height="15" name="Figura13" border="0" /> ).</p>
-<p><strong>2 - </strong>Define op&ccedil;&atilde;o de alvo; no caso pontos internos ao pol&iacute;gono definido.</p>
-<p><strong>3 - </strong>Finaliza a opera&ccedil;&atilde;o salvando o resultado.</p>
-<p><strong>4 - </strong>Fecha a fun&ccedil;&atilde;o.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_1037d2784a7ec1a3.png" alt="" width="567" height="369" name="Figura14" border="0" /></p>
-<p>Resultando:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_ba7af6322c97697e.png" alt="" width="567" height="377" name="Figura15" border="0" /></p>
-<p>Visualizando nuvem de pontos obtida sem e com o "shade" (<strong>Display &gt; Shaders &amp; Filters &gt; EDL Shader</strong>):</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_6136faef21923cd5.png" alt="" width="567" height="375" name="Figura16" border="0" /></p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_fb86a360172df722.png" alt="" width="567" height="369" name="Figura17" border="0" /></p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_a929444a61198cf1.png" alt="" width="567" height="363" name="Figura18" border="0" /></p>
-<p>Queremos agora utilizar na barra de ferramentas <strong>View</strong> (ver figura a seguir) os comandos para nos fornecer a vista frontal do Masp (na figura, &iacute;cone indicado em 2), ou lateral (3 ou 5).</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_91b5ad9252f35a33.png" alt="" width="335" height="44" name="Figura19" border="0" /></p>
-<p>Para isso ser&aacute; necess&aacute;rio rotacionar a camada de pontos que obtivemos (novamente fazendo uma c&oacute;pia para n&atilde;o perder a camada do MASP sem rota&ccedil;&atilde;o) de forma que a frente do terreno do MASP fique alinhado com o eixo X do sistema de coordenadas em uso em <strong>Edit &gt; Translate &gt; Rotate</strong>.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_6b5b230e0b65d5a7.png" alt="" width="567" height="357" name="Figura20" border="0" /></p>
-<p>Ou:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_68a40cb32c77637b.png" alt="" width="567" height="370" name="Figura21" border="0" /></p>
-<p>E agora as vista frontal e a lateral:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_45186ed2472cdb78.png" alt="" width="567" height="375" name="Figura22" border="0" /></p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_9bd563a7ebcdf9c6.png" alt="" width="567" height="360" name="Figura23" border="0" /></p>
-<h3>05. Trabalhando com v&aacute;rios arquivos</h3>
-<p>Abrindo da forma anteriormente apresentada os quatro arquivos simultaneamente:</p>
-<h3><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_2c150c16e74dd7b9.png" alt="" width="567" height="264" name="Figura24" border="0" /></h3>
-<p>Editando os valores de translado para termos as coordenadas deste trabalho compat&iacute;vel com as do anterior.</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_2cd48726bd2f220e.png" alt="" width="567" height="253" name="Figura25" border="0" /></p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_b06b2297f66bea21.png" alt="" width="567" height="373" name="Figura26" border="0" /></p>
-<p>Selecionando apenas alguns pontos, desta vez englobando partes de mais de um arquivo; selecionar as quatro nuvens de pontos utilizando (&lt;Crtl&gt; + clique) e criar pol&iacute;gono de corte englobando pontos em diversos arquivos, de forma semelhante ao explicado anteriormente (em <strong>Edit &gt; Segment</strong>).</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_a90e1893b8412961.png" alt="" width="567" height="303" name="Figura27" border="0" /></p>
-<p>Agora clonar e unificar (<strong>Edit &gt; Clone</strong> e<strong> Edit &gt; Merge</strong>) antes de rotacionar nosso produto, para obtermos a eleva&ccedil;&atilde;o parcial da Av. Paulista da mesma forma que o feito com a eleva&ccedil;&atilde;o do MASP:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_7cbf26c4d9ee43d7.png" alt="" width="567" height="144" name="Figura28" border="0" /></p>
-<h3>06. Salvando</h3>
-<p>Em <strong>File &gt; Save</strong>, ap&oacute;s selecionar todas as camadas existentes, podemos salvar todo nosso ambiente de trabalho e camadas no formato <strong>CloudCompare entities (*.bin)</strong> (temos ainda a op&ccedil;&atilde;o <strong>DXF geometry (*.dxf)</strong>).</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_f08ee478420202ab.png" alt="" width="210" height="176" name="Figura29" border="0" /><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_24ada039f30a34f6.png" alt="" width="258" height="172" name="Figura30" border="0" /></p>
-<p>Selecionando apenas uma camada de nuvens de pontos, temos as op&ccedil;&otilde;es:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_6d8d916ad4596e54.png" alt="" width="567" height="362" name="Figura31" border="0" /></p>
-<p>E voltando um pouco, selecionando camada com malhas triangulares (<strong>Mesh</strong>), temos tamb&eacute;m diversas op&ccedil;&otilde;es para salvar:</p>
-<p><img src="file:///C:/Users/Danilo/AppData/Local/Temp/lu9636cnlad.tmp/lu9636cnlby_tmp_edc3cfeecca93363.png" alt="" width="530" height="370" name="Imagem 31" border="0" /></p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Para
+ilustrar o conceito de </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Campo
+Escalar</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+fazendo a seguinte opera&ccedil;&atilde;o:</span></font></p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">A
+- Duplicar a camada que estamos trabalhando; com a camada escolhida
+selecionada clicar em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Clone</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+Este procedimento nos permite experimentar opera&ccedil;&otilde;es na
+nova camada, preservando a camada original. As fun&ccedil;&otilde;es
+aplicadas nas camadas n&atilde;o podem ser desfeitas, apesar de s&oacute;
+alterar o arquivo original se salvarmos a camada modificada com o
+mesmo nome e formato.</span></font></p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">B
+- Selecione a camada copiada e clique em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt;Scalar fields &gt; Export coordenate(s) to SF(s)</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">;
+no quadro que abre, vamos marcar apenas </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Z</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+e clicar </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">OK</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">A
+</span>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_9b832ceb152c5573.png" name="Figura3" align="bottom" width="119" height="264" border="0"/>
+<span style="background: #ffffff">
+ B </span>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_37b1b2d4ff12af3d.png" name="Figura4" align="bottom" width="203" height="262" border="0"/>
+<span style="background: #ffffff">
+</span>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">C
+- Vamos ao resultado; observe que criamos a camada </span></font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-243
+- cloud.clone</b></font><font size="3" style="font-size: 12pt">. Para
+esta camada temos em </font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Scalar
+Field</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+agora o campo escalar </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Coord.Z</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+al&eacute;m de </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Classification</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+Por ter acabado de ser criado </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Coord.Z
+</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">deve
+estar como o </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Campo
+escalar</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+escolhido para esta nova camada. Desabilite a visualiza&ccedil;&atilde;o
+da camada &quot;</span></font><font size="3" style="font-size: 12pt"><b>
+MDS_color_3314-243 - cloud</b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(clique no quadrado ao lado da camada) e selecione a camada
+</span></font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-243
+- cloud.clone</b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(devemos fazer isto pois a camada de cima esconde neste caso, por ter
+pontos na mesma posi&ccedil;&atilde;o, a camada criada). A figura
+abaixo representa os pontos com coordenadas Z maiores em tonalidades
+mais pr&oacute;xima do vermelho, e as mais baixas, do azul. Observe
+em</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">
+Properties &gt; Scalar Field</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+a op&ccedil;&atilde;o </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Coord.Z</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+ativa.</span></font></p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">C
+</span></font>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_a6dd809d208b6e07.png" name="Imagem 46" align="bottom" width="552" height="359" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">D
+- Em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties
+&gt;  Color Scale</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+podemos alterar a escala de cores a ser exibida e em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties
+&gt; SF Display Params</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+podemos controlar as op&ccedil;&otilde;es de exibi&ccedil;&atilde;o
+da escala de cores  no modelo.</span></font></p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">D</span><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_7b405a4ab380dc54.png" name="Imagem 22" align="bottom" width="553" height="242" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">E
+- Em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties
+&gt; </span></b></font><font size="3" style="font-size: 12pt"><i><span style="background: #ffffff">
+</span></i></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Color
+Scale</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+podemos ainda editar ou alternar a escala de cores utilizada (ver
+figura E1 onde aplicamos </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Blue
+&gt; White &gt; Red</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">),
+e em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties</span></b></font><font size="3" style="font-size: 12pt"><i><span style="background: #ffffff">
+&gt; </span></i></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">SF
+Display Params</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+podemos ajustar a aplica&ccedil;&atilde;o da escala de cores no
+modelo (movendo o &quot;indicador triangular&quot; - ver figura E2),
+ou restringindo o intervalo de valores para a aplica&ccedil;&atilde;o
+da escala de cores (movendo o &quot;indicador semi-circular ou
+circular&quot; - ver figura E3).</span></font></p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">E1</span><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_3f4bd861854f8a1d.png" name="Imagem 25" align="bottom" width="547" height="255" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">E2</span><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_4c347a6916038e82.png" name="Figura5" align="bottom" width="547" height="258" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">E3</span></font></font><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_bccc2984523b0164.png" name="Imagem 49" align="bottom" width="546" height="355" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Vamos
+aproveitar a &uacute;ltima visualiza&ccedil;&atilde;o obtida para
+apresentar outro recurso dispon&iacute;vel; ap&oacute;s clicar em
+</span></font></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Scalar fields &gt; Filter By Value</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+, nos &eacute; oferecida a op&ccedil;&atilde;o </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Export</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+que produzir&aacute; uma nova camada de &quot;Nuvem de Pontos&quot;
+com os pontos definidos para serem colorizados anteriormente. Observe
+que o modo de exibi&ccedil;&atilde;o da camada de origem deste
+processo foi desabilitado, favorecendo a visualiza&ccedil;&atilde;o
+imediata do resultado (veja o resultado da redu&ccedil;&atilde;o do
+n&uacute;mero de pontos em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Property
+&gt; Cloud</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">).
+Fazer este procedimento com a op&ccedil;&atilde;o </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Split</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+divide o arquivo em dois segundo o mesmo crit&eacute;rio
+anteriormente definido.</span></font></p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_5de3e9206f73f0e9.png" name="Imagem 55" align="bottom" width="567" height="369" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">O
+MDS disponibilizado pelo GEOSAMPA classificou os pontos da nuvem em
+fun&ccedil;&atilde;o do tipo de superf&iacute;cie que representa com
+a seguinte rela&ccedil;&atilde;o de valor:</span></font></font></p>
+<p style="margin-bottom: 0cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">2	Ground
+(terreno)</span></font></font></p>
+<p style="margin-bottom: 0cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">5	Vegetation,
+(vegeta&ccedil;&atilde;o)</span></font></font></p>
+<p style="margin-bottom: 0cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">6	Building
+(edifica&ccedil;&atilde;o)</span></font></font></p>
+<p style="margin-bottom: 0cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">9	Utilizado
+para pontes e viadutos</span></font></font></p>
+<p style="margin-bottom: 0cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">19	N&atilde;o
+classificados</span></font></font></p>
+<p style="margin-bottom: 0cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">20	N&atilde;o
+classificados, junto ao solo</span></font></font></p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Para
+visualizarmos no MDS os pontos de acordo com esta classifica&ccedil;&atilde;o,
+defina o </span></font></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Campo
+Escalar</span></b></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+correspondente em</span></font></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">
+Properties &gt; Scalar Field</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+selecionando </span></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Classification</span></b></font></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+com a camada  </span></font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-243
+- cloud </b></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">ativa.</span></font></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_73d63ca603287785.png" name="Figura6" align="bottom" width="567" height="367" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Observe
+em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Properties
+&gt; SF Display Params </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">que
+os valores atribuidos ao </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Campo
+Escalar</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+agora em uso varia de </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">2.00</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+a </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">20.00</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+Podemos destacar em cor apenas os pontos classificados como
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">edifica&ccedil;&atilde;o
+(</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">6.00</span></b></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">),
+</span></font></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">restringindo
+o intervalo de valores para a aplica&ccedil;&atilde;o da escala de
+cores (movendo o &quot;indicador semi-circular ou circular&quot;)
+conforme a seguir:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_b19640be5aafd4b1.png" name="Figura7" align="bottom" width="567" height="368" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Com
+o mesmo procedimento vamos selecionar agora para visualiza&ccedil;&atilde;o
+apenas os pontos classificados como </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">2.00</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+visualizando em cor apenas o terreno. Para poder visualizar o
+resultado desta nova opera&ccedil;&atilde;o, ajuste a tela de
+visualiza&ccedil;&atilde;o para obter uma imagem da parte inferior do
+modelo (isto se faz necess&aacute;rio pois os pontos com outras
+classifica&ccedil;&otilde;es escondem os pontos selecionados). </span></font>
+</p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_e072b65b69748467.png" name="Figura8" align="bottom" width="567" height="379" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Novamente
+em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Scalar fields &gt; Filter By Value </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">e
+depois </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Export
+</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">vamos
+criar uma camada apenas com pontos do terreno. Renomeie esta camada
+(com um duplo clique sobre o nome da camada) como </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Terreno</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_6e5167266d3cbf42.png" name="Figura9" align="bottom" width="567" height="364" border="0"/>
+</p>
+<h3 class="western"><font face="Calibri, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">03.
+Produzindo malha triangular (pol&iacute;gonos)</span></font></font></h3>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Podemos
+com a camada </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Terreno
+</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">gerar
+uma malha triangular (estamos usando os pontos do terreno por
+possu&iacute;rem caracter&iacute;sticas mais favor&aacute;veis a
+gera&ccedil;&atilde;o de malha triangular do que, por exemplo, os
+classificados como vegeta&ccedil;&atilde;o), mas para n&atilde;o
+perder a camada </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Terreno</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+vamos fazer antes duas c&oacute;pias dela em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Clone </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">(para
+testarmos op&ccedil;&otilde;es de triangula&ccedil;&atilde;o). Para
+viabilizar uma melhora na qualidade de visualiza&ccedil;&atilde;o da
+malha a ser criada, vamos definir antes uma cor clara para todos os
+pontos desta camada em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Colors &gt; Set unique</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">;
+defina um tom de amarelo como segue:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_e878630e90abe77d.png" name="Figura10" align="bottom" width="567" height="368" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Com
+a camada </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Terreno.clone</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+selecionada produzimos a malha triangular em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Mesh &gt; Dlelaunay2.5D (XY plane)</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+obtendo caixa de di&aacute;logo para definirmos o tamanho m&aacute;ximo
+do lado do tri&acirc;ngulo da malha a ser gerada (com a op&ccedil;&atilde;o
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">0.00</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+para n&atilde;o aplicar este limite). Vamos simular com a op&ccedil;&atilde;o
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">0.00</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(A) e com </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">3.00</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(B); teremos os resultados (para melhor visualiza&ccedil;&atilde;o da
+malha triangular, habilite a op&ccedil;&atilde;o de sombreamento em
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Display
+&gt; Shaders &amp; Filters &gt; EDL Shader</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">;
+em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Display
+&gt; Shaders &amp; Filters &gt; Remove Filter </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">voc&ecirc;
+pode desabilitar a op&ccedil;&atilde;o de sombreamento):</span></font></p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">A</span><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_a06062d2a297bd2.png" name="Imagem 34" align="bottom" width="535" height="360" border="0"/>
+<span style="background: #ffffff">
+</span>
+</p>
+<p style="margin-bottom: 0.35cm"><span style="background: #ffffff">B</span><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_ee086391fa32ca15.png" name="Figura11" align="bottom" width="542" height="349" border="0"/>
+<span style="background: #ffffff">
+</span>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<h3 class="western"><font face="Calibri, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">04.
+Trabalhando com parte da nuvem de pontos</span></font></font></h3>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Vamos
+ajustar nossa tela com uma vista superior (barra de ferramentas </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">View</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+- &iacute;cone identificado com 1; ver figura a seguir)  de nosso
+modelo, com o modo perspectiva desabilitado em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Display
+&gt; Toggle Centered Perspective</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+( liga e desliga o modo perspectiva), e depois aproximar para a &aacute;rea
+de interesse.</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_91b5ad9252f35a33.png" name="Imagem 52" align="bottom" width="335" height="44" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Nosso
+objetivo agora &eacute; explorar um pouco mais os recursos de
+manipula&ccedil;&atilde;o e visualiza&ccedil;&atilde;o. Queremos
+olhar com mais aten&ccedil;&atilde;o uma edifica&ccedil;&atilde;o em
+particular, o MASP como exemplo (lembre se de fazer este procedimento
+na c&oacute;pia da camada original para preserv&aacute;-la). Em uma
+nova camada </span></font><font size="3" style="font-size: 12pt"><b>MDS_color_3314-243
+- cloud.clone </b></font><font size="3" style="font-size: 12pt">poderemos
+em </font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Segment</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+delimitar um pol&iacute;gono em torno desta edifica&ccedil;&atilde;o
+e dividir nossa nuvem de pontos em duas camadas; uma com os pontos
+internos a este pol&iacute;gono e a outra com os pontos restantes. Em
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Segment</span></b></font><font size="3" style="font-size: 12pt"><i><span style="background: #ffffff">
+</span></i></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">abrimos
+caixa de ferramenta onde podemos trabalhar conforme a figura:</span></font><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_8fcff270e697d424.png" name="Figura12" align="bottom" width="332" height="52" border="0"/>
+</p>
+<p style="margin-bottom: 0cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">1
+- </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Abre
+fun&ccedil;&atilde;o de desenhar pol&iacute;gono para referenciar
+segmenta&ccedil;&atilde;o da nuvem de pontos (bot&atilde;o esquerdo
+do mouse adiciona pontos ao pol&iacute;gono, o esquerdo encerra a
+defini&ccedil;&atilde;o do mesmo). Ap&oacute;s definir o tra&ccedil;ado
+do pol&iacute;gono de corte, se for do nosso interesse um novo &iacute;cone
+fica dispon&iacute;vel permitindo salvar este pol&iacute;gono em nova
+(</span></font><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_e11276cc7072aaff.png" name="Figura13" align="bottom" width="18" height="15" border="0"/>
+<font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+).</span></font></p>
+<p style="margin-bottom: 0cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">2
+- </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Define
+op&ccedil;&atilde;o de alvo; no caso pontos internos ao pol&iacute;gono
+definido.</span></font></p>
+<p style="margin-bottom: 0cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">3
+- </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Finaliza
+a opera&ccedil;&atilde;o salvando o resultado.</span></font></p>
+<p style="margin-bottom: 0cm"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">4
+- </span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Fecha
+a fun&ccedil;&atilde;o.</span></font></p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_1037d2784a7ec1a3.png" name="Figura14" align="bottom" width="567" height="369" border="0"/>
+</p>
+<p style="margin-bottom: 0cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Resultando:</span></font></p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_ba7af6322c97697e.png" name="Figura15" align="bottom" width="567" height="377" border="0"/>
+</p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Visualizando
+nuvem de pontos obtida sem e com  o &quot;shade&quot; (</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Display
+&gt; Shaders &amp; Filters &gt; EDL Shader</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">):</span></font></p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_6136faef21923cd5.png" name="Figura16" align="bottom" width="567" height="375" border="0"/>
+</p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_fb86a360172df722.png" name="Figura17" align="bottom" width="567" height="369" border="0"/>
+</p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_a929444a61198cf1.png" name="Figura18" align="bottom" width="567" height="363" border="0"/>
+</p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Queremos
+agora utilizar na barra de ferramentas </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">View</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+ (ver figura a seguir) os comandos para nos fornecer a vista frontal
+do Masp (na figura, &iacute;cone indicado em 2), ou lateral (3 ou 5).
+</span></font>
+</p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_91b5ad9252f35a33.png" name="Figura19" align="bottom" width="335" height="44" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Para
+isso ser&aacute; necess&aacute;rio rotacionar a camada de pontos que
+obtivemos (novamente fazendo uma c&oacute;pia para n&atilde;o perder
+a camada do MASP sem rota&ccedil;&atilde;o) de forma que a frente do
+terreno do MASP fique alinhado com o eixo X do sistema de coordenadas
+em uso em </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Translate &gt; Rotate</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_6b5b230e0b65d5a7.png" name="Figura20" align="bottom" width="567" height="357" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Ou:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_68a40cb32c77637b.png" name="Figura21" align="bottom" width="567" height="370" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">E
+agora as vista frontal e a lateral:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_45186ed2472cdb78.png" name="Figura22" align="bottom" width="567" height="375" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_9bd563a7ebcdf9c6.png" name="Figura23" align="bottom" width="567" height="360" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<h3 class="western"><font face="Calibri, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">05.
+Trabalhando com v&aacute;rios arquivos</span></font></font></h3>
+<h3 class="western"><br/>
+<br/>
+
+</h3>
+<p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Ab</span></font><font size="3" style="font-size: 12pt">rindo
+da forma anteriormente apresentada os quatro arquivos
+simultaneamente:</font></p>
+<h3 class="western"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_2c150c16e74dd7b9.png" name="Figura24" align="bottom" width="567" height="264" border="0"/>
+</h3>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Editando
+os valores de translado para termos as coordenadas deste trabalho
+compat&iacute;vel com as do anterior.</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_2cd48726bd2f220e.png" name="Figura25" align="bottom" width="567" height="253" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_b06b2297f66bea21.png" name="Figura26" align="bottom" width="567" height="373" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Selecionando
+apenas alguns pontos, desta vez englobando partes de mais de um
+arquivo; selecionar as quatro nuvens de pontos utilizando (&lt;Crtl&gt;
++ clique) e criar pol&iacute;gono de corte englobando pontos em
+diversos arquivos, de forma semelhante ao explicado anteriormente (em
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Segment</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">)</span></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_a90e1893b8412961.png" name="Figura27" align="bottom" width="567" height="303" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Agora
+clonar e unificar (</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Edit
+&gt; Clone</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+e</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">
+Edit &gt; Merge</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">)
+antes de rotacionar nosso produto, para obtermos a eleva&ccedil;&atilde;o
+parcial da Av. Paulista da mesma forma que o feito com a eleva&ccedil;&atilde;o
+do MASP:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_7cbf26c4d9ee43d7.png" name="Figura28" align="bottom" width="567" height="144" border="0"/>
+</p>
+<h3 class="western"><font face="Calibri, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">06.
+Salvando</span></font></font></h3>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Em
+</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">File
+&gt; Save</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+ap&oacute;s selecionar todas as camadas existentes, podemos salvar
+todo nosso ambiente de trabalho e camadas no formato </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">CloudCompare
+entities (*.bin)</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+(temos ainda a op&ccedil;&atilde;o </span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">DXF
+geometry (*.dxf)</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">).</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_f08ee478420202ab.png" name="Figura29" align="bottom" width="210" height="176" border="0"/>
+<span style="background: #ffffff">
+ </span>
+<img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_24ada039f30a34f6.png" name="Figura30" align="bottom" width="258" height="172" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Selecionando
+apenas uma camada de nuvens de pontos, temos as op&ccedil;&otilde;es:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_6d8d916ad4596e54.png" name="Figura31" align="bottom" width="567" height="362" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.35cm"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">E
+voltando um pouco, selecionando camada com malhas triangulares
+(</span></font><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">Mesh</span></b></font><font size="3" style="font-size: 12pt"><span style="background: #ffffff">),
+temos tamb&eacute;m diversas op&ccedil;&otilde;es para salvar:</span></font></p>
+<p style="margin-bottom: 0.35cm"><img src="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_edc3cfeecca93363.png" name="Imagem 31" align="bottom" width="530" height="370" border="0"/>
+</p>
+<p style="margin-bottom: 0.35cm"><br/>
+<br/>
+
+</p>
+</body>
+</html>
