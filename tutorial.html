@@ -20,7 +20,7 @@
 			<p>A Prefeitura do Município de São Paulo (PMSP) disponibiliza através do GEOSAMPA o produto de levantamento realizado com a tecnologia LIDAR
 			(do inglês "Light Detection Ranging" - apresentada na Wikipédia como "tecnologia óptica de detecção remota que mede propriedades da luz reflectida
 			de modo a obter a distância e/ou outra informação a respeito um determinado objecto distante. O método mais utilizado para determinar a distância
-			a um objecto é a utilização de&nbsp;<a href="https://pt.wikipedia.org/wiki/Laser">laser</a>&nbsp;pulsado"), o Modelo Digital de Superfície (MDS).
+			de um objeto é a utilização de <a href="https://pt.wikipedia.org/wiki/Laser">laser</a> pulsado"), o Modelo Digital de Superfície (MDS).
 			Trata-se de modelo tridimensional que retrata as edificações, vegetações, terreno e outras feições através de milhões de pontos (nuvem de pontos).
 			Cada um destes XX arquivos resultantes deste levantamento representa uma área de aproximadamente 300.000 m2, ultrapassando com frequência 5 milhões
 			de pontos. Manipular estes arquivos demanda uma configuração de computadores adequada (ver anexo...a produzir?), e devemos esperar resultados
@@ -39,23 +39,23 @@
 			<p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/21be9359b14c6158.png?raw=true" width="195" height="46" alt="21be9359b14c6158">
 		  <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/1ca48a41bba20cc4.png?raw=true" width="261" height="84" alt="1ca48a41bba20cc4"></p>
   		<p>CloudCompare, imagens obtidas no endereço eletrônico.</p>
-			<p>Organize o ambiente para utilizar o <strong>CloudCompare</strong> no seu computador, baixe os arquivos <strong>MDS_color_3314-164.laz</strong>, <strong>MDS_color_3314-243.laz</strong>,
-			<strong>MDS_color_3314-332.laz</strong> e o <strong>MDS_color_3314-411.laz</strong> e acompanhe o passo a passo.</p>
+			<p>Organize o ambiente para utilizar o CloudCompare no seu computador, baixe os arquivos MDS_color_3314-164.laz, MDS_color_3314-243.laz,
+			MDS_color_3314-332.laz e o MDS_color_3314-411.laz e acompanhe o passo a passo.</p>
   		<p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/7b78ff5eb5739f45.png?raw=true" width="561" height="393" alt="7b78ff5eb5739f45"></p>
 			<p>GEOSAMPA, obtendo os arquivos de trabalho.</p>
 		<a name="1. Abrindo arquivos"></a>
 	  <h3>1. Abrindo arquivos</h3>
-			<p>Acesse o <strong>CloudCompare</strong>; em <strong>File &gt; Open</strong> abra caixa de diálogo e selecione inicialmente o arquivo <strong>MDS_color_3314-243.laz</strong>
-			(observamos que arquivos "las" ou "laz" são formatos equivalentes, este último em sua forma compactada); clicar em <strong>Abrir</strong>.</p>
+			<p>Acesse o CloudCompare; em File > Open abra caixa de diálogo e selecione inicialmente o arquivo MDS_color_3314-243.laz
+			(observamos que arquivos "las" ou "laz" são formatos equivalentes, este último em sua forma compactada); clicar em Abrir.</p>
   		<p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/3f970a5a47b6c1d2.png?raw=true" width="567" height="369" alt="3f970a5a47b6c1d2"></p>
-  		<p>Na caixa de diálogo <strong>Open LAS File</strong>, em <strong>Standard Fields</strong> vamos deixar apontados apenas os atributos
+  		<p>Na caixa de diálogo Open LAS File, em Standard Fields vamos deixar apontados apenas os atributos
 			<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/d060fc4b3fc27ec4.png?raw=true" width="102" height="20" alt="d060fc4b3fc27ec4"> e
-			<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/8f558d56aa492b76.png?raw=true" width="87" height="17" alt="8f558d56aa492b76"> e clicar em <strong>Apply</strong>.</p>
+			<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/8f558d56aa492b76.png?raw=true" width="87" height="17" alt="8f558d56aa492b76"> e clicar em Apply.</p>
   		<p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/a4c9740297a55280.png?raw=true" width="567" height="369" alt="a4c9740297a55280"></p>
-  		<p>Nova caixa de diálogo nos é apresentada, em <strong>Global shift/scale</strong> temos o alerta de que as coordenadas em nosso sistema (UTM-Sirgas 2000 - ver tutorial GEOSAMPA)
+  		<p>Nova caixa de diálogo nos é apresentada, em Global shift/scale temos o alerta de que as coordenadas em nosso sistema (UTM-Sirgas 2000 - ver tutorial GEOSAMPA)
 			apresenta valores muito grandes, e que ao importarmos nossos dados sem transladar as coordenadas poderá resultar em perda de precisão em nosso arquivo. Sugere então valores para o translado, que aceitaremos, assim como
 			<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/c0647092ae4e8dc5.png?raw=true" width="160" height="12" alt="c0647092ae4e8dc5">
-			(preservaremos a informação do translado aplicado nos pontos do arquivo aberto), clicar em <strong>Yes</strong>.</p>
+			(preservaremos a informação do translado aplicado nos pontos do arquivo aberto), clicar em Yes.</p>
   		<p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/c24c9da0607fe954.png?raw=true" width="567" height="370" alt="c24c9da0607fe954"></p>
   		<p>Temos a seguir a imagem do MDS. Vale a pena experimentar a interação com a imagem que podemos ter ao manusear o mouse sobre a área de visualização; movendo-o com o botão esquerdo pressionado giramos nosso modelo,
 			o "<i>scroll</i>" aproxima e distancia o modelo e movendo o mouse com o botão direito pressionado deslocamos a imagem gerada na tela. Um conjunto de ícones no lado esquerdo da tela oferecem diversos recursos para
@@ -63,50 +63,52 @@
   		<p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/ce3bdfeacf785065.png?raw=true" width="567" height="370" alt="ce3bdfeacf785065"></p>
 	  <a name="2. Explorando o arquivo no CloudeCompare"></a>
 	  <h3>2. Explorando o arquivo no CloudCompare</h3>
-  	  <p>Na barra lateral esquerda, no quadro <strong>DB Tree</strong> podemos selecionar clicando no arquivo de pontos aberto (ícone <strong>Nuvem</strong> ao lado) a nuvem de pontos importada.
-		  Isto nos mostra algumas características e recursos disponíveis no quadro <strong>Properties</strong>. Observe que ao importar o arquivo foi criado um <strong>Grupo</strong> (ícone <strong>Pasta</strong> ao lado)
+  	  <p>Na barra lateral esquerda, no quadro DB Tree podemos selecionar clicando no arquivo de pontos aberto (ícone Nuvem ao lado) a nuvem de pontos importada.
+		  Isto nos mostra algumas características e recursos disponíveis no quadro Properties. Observe que ao importar o arquivo foi criado um Grupo (ícone Pasta ao lado)
 		  com a denominação correspondente ao local onde o arquivo aberto está salvo e neste grupo o arquivo aberto foi posicionando. Avançando um pouco nos conceitos do programa, podemos abrir no
-		  <strong>CloudCompare</strong> diversos arquivos simultaneamente, que aparecerão no <strong>DB Tree</strong> como se fossem camadas (ou <strong>layers</strong>),
+		  CloudCompare diversos arquivos simultaneamente, que aparecerão no DB Tree como se fossem camadas (ou layers),
 			estas poderão ser salvas individualmente após algum procedimento, ou ainda serem todas salvas em único arquivo, reforçando a aplicação da ideia de camada, e neste sentido adotaremos o termo.</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/91399f8e86504f83.png?raw=true" width="567" height="379" alt="91399f8e86504f83"></p>
-      <p>E abaixo (após "<i>scroll</i>"), demais informações de <strong>Properties</strong>.</p>
+      <p>E abaixo (após "<i>scroll</i>"), demais informações de Properties.</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/6d0011f7c9a9fba5.png?raw=true" width="162" height="166" alt="6d0011f7c9a9fba5">
 		  <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/e8763db1c66c4229.png?raw=true" width="156" height="100" alt="e8763db1c66c4229"></p>
       <p>Vamos destacar alguns itens:</p>
       <ul>
        <li>
-        <p><strong>Cloud</strong> nos apresenta o número de pontos da camada selecionada (<strong>Points</strong>) e o translado aplicado nos pontos desta camada (<strong>Global shift</strong>).</p>
+        <p>Cloud nos apresenta o número de pontos da camada selecionada (Points) e o translado aplicado nos pontos desta camada (Global shift).</p>
        </li>
        <li>
-				<p><strong>CC Object</strong> nos traz <strong>Colors</strong>, onde podemos optar entre as possibilidades de visualização de cor que o arquivo oferece. Em nosso caso temos <strong>None</strong>, <strong>R G B</strong>, e por último <strong>Scalar Field</strong> (<strong>Campo Escalar</strong>). Colorir utilizando o <strong>Campo Escalar</strong> se traduz em atribuir uma escala de cores em função dos valores de determinado atributo, a sua "posição" entre os valores existentes no universo dos pontos da camada.</p>
+				<p>CC Object nos traz Colors, onde podemos optar entre as possibilidades de visualização de cor que o arquivo oferece. Em nosso caso temos None, R G B, e por último Scalar Field (Campo Escalar). Colorir utilizando o Campo Escalar se traduz em atribuir uma escala de cores em função dos valores de determinado atributo, a sua "posição" entre os valores existentes no universo dos pontos da camada.</p>
        </li>
        <li>
-        <p><strong>Scalar Field</strong> indica a existência de um único campo escalar disponível: <strong>Classification</strong>.</p>
+        <p>Scalar Field indica a existência de um único campo escalar disponível: Classification.</p>
        </li>
       </ul>
-      <p>Para ilustrar o conceito de <strong>Campo Escalar</strong>, fazendo a seguinte operação:</p>
-      <p>A - Duplicar a camada que estamos trabalhando; com a camada escolhida selecionada clicar em <strong>Edit &gt; Clone</strong>.
+      <p>Para ilustrar o conceito de Campo Escalar, fazendo a seguinte operação:</p>
+      <p>A - Duplicar a camada que estamos trabalhando; com a camada escolhida selecionada clicar em Edit > Clone.
 			Este procedimento nos permite experimentar operações na nova camada, preservando a camada original. As funções aplicadas nas camadas não podem ser desfeitas, apesar de só alterar o
 			arquivo original se salvarmos a camada modificada com o mesmo nome e formato.</p>
-      <p>B - Selecione a camada copiada e clique em <strong>Edit &gt;Scalar fields &gt; Export coordenate(s) to SF(s)</strong>; no quadro que abre, vamos marcar apenas <strong>Z</strong> e clicar <strong>OK</strong>.</p>
+      <p>B - Selecione a camada copiada e clique em Edit >Scalar fields > Export coordenate(s) to SF(s); no quadro que abre, vamos marcar apenas Z e clicar OK.</p>
       <p>A <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/9b832ceb152c5573.png?raw=true" width="119" height="264" alt="9b832ceb152c5573"> B
 			<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/37b1b2d4ff12af3d.png?raw=true" width="203" height="262" alt="37b1b2d4ff12af3d"></p>
-      <p>C - Vamos ao resultado; observe que criamos a camada <strong>MDS_color_3314-243 - cloud.clone</strong>. Para esta camada temos em <strong>Scalar Field</strong> agora o campo escalar <strong>Coord.Z</strong> além de
-			<strong>Classification</strong>. Por ter acabado de ser criado <strong>Coord.Z</strong> deve estar como o <strong>Campo escalar</strong> escolhido para esta nova camada. Desabilite a visualização da camada "
-			<strong>MDS_color_3314-243 - cloud</strong> (clique no quadrado ao lado da camada) e selecione a camada <strong>MDS_color_3314-243 - cloud.clone</strong>
+      <p>C - Vamos ao resultado; observe que criamos a camada MDS_color_3314-243 - cloud.clone. Para esta camada temos em Scalar Field agora o campo escalar Coord.Z além de
+			Classification. Por ter acabado de ser criado Coord.Z deve estar como o Campo escalar escolhido para esta nova camada. Desabilite a visualização da camada "
+			MDS_color_3314-243 - cloud (clique no quadrado ao lado da camada) e selecione a camada MDS_color_3314-243 - cloud.clone
 			(devemos fazer isto pois a camada de cima esconde neste caso, por ter pontos na mesma posição, a camada criada). A figura abaixo representa os pontos com coordenadas Z maiores em tonalidades
-			mais próxima do vermelho, e as mais baixas, do azul. Observe em <strong>Properties &gt; Scalar Field</strong> a opção <strong>Coord.Z</strong> ativa.</p>
+			mais próxima do vermelho, e as mais baixas, do azul. Observe em Properties > Scalar Field a opção Coord.Z ativa.</p>
       <p>C <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/a6dd809d208b6e07.png?raw=true" width="552" height="359" alt="a6dd809d208b6e07"></p>
-      <p>D - Em <strong>Properties &gt; Color Scale</strong> podemos alterar a escala de cores a ser exibida e em <strong>Properties &gt; SF Display Params</strong> podemos controlar as opções de exibição da escala de cores no modelo.</p>
+      <p>D - Em Properties > Color Scale podemos alterar a escala de cores a ser exibida e em Properties > SF Display Params podemos controlar as opções de exibição da escala de cores no modelo.</p>
       <p>D<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/7b405a4ab380dc54.png?raw=true" width="553" height="242" alt="7b405a4ab380dc54"></p>
-      <p>E - Em <strong>Properties &gt;</strong> <strong>Color Scale</strong> podemos ainda editar ou alternar a escala de cores utilizada (ver figura E1 onde aplicamos <strong>Blue &gt; White &gt; Red</strong>), e em <strong>Properties</strong> <i>&gt;</i> <strong>SF Display Params</strong> podemos ajustar a aplicação da escala de cores no modelo (movendo o "indicador triangular" - ver figura E2), ou restringindo o intervalo de valores para a aplicação da escala de cores (movendo o "indicador semi-circular ou circular" - ver figura E3).</p>
+      <p>E - Em Properties > Color Scale podemos ainda editar ou alternar a escala de cores utilizada (ver figura E1 onde aplicamos Blue > White > Red), e em Properties
+      <i>></i> SF Display Params podemos ajustar a aplicação da escala de cores no modelo (movendo o "indicador triangular" - ver figura E2),
+      ou restringindo o intervalo de valores para a aplicação da escala de cores (movendo o "indicador semi-circular ou circular" - ver figura E3).</p>
       <p>E1<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/3f4bd861854f8a1d.png?raw=true" width="547" height="255" alt="3f4bd861854f8a1d"></p>
       <p>E2<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/4c347a6916038e82.png?raw=true" width="547" height="258" alt="4c347a6916038e82"></p>
       <p>E3<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/bccc2984523b0164.png?raw=true" width="546" height="355" alt="bccc2984523b0164"></p>
-      <p>Vamos aproveitar a última visualização obtida para apresentar outro recurso disponível; após clicar em <strong>Edit &gt; Scalar fields &gt; Filter By Value</strong> , nos é oferecida a opção
-			<strong>Export</strong>, que produzirá uma nova camada de "Nuvem de Pontos" com os pontos definidos para serem colorizados anteriormente. Observe que o modo de exibição da camada de origem deste
-			processo foi desabilitado, favorecendo a visualização imediata do resultado (veja o resultado da redução do número de pontos em <strong>Property &gt; Cloud</strong>).
-			Fazer este procedimento com a opção <strong>Split</strong> divide o arquivo em dois segundo o mesmo critério anteriormente definido.</p>
+      <p>Vamos aproveitar a última visualização obtida para apresentar outro recurso disponível; após clicar em Edit > Scalar fields > Filter By Value , nos é oferecida a opção
+			Export, que produzirá uma nova camada de "Nuvem de Pontos" com os pontos definidos para serem colorizados anteriormente. Observe que o modo de exibição da camada de origem deste
+			processo foi desabilitado, favorecendo a visualização imediata do resultado (veja o resultado da redução do número de pontos em Property > Cloud).
+			Fazer este procedimento com a opção Split divide o arquivo em dois segundo o mesmo critério anteriormente definido.</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/5de3e9206f73f0e9.png?raw=true" width="567" height="369" alt="5de3e9206f73f0e9"></p>
       <p>O MDS disponibilizado pelo GEOSAMPA classificou os pontos da nuvem em função do tipo de superfície que representa com a seguinte relação de valor:</p>
       <p>2 Ground (terreno)</p>
@@ -115,61 +117,61 @@
       <p>9 Utilizado para pontes e viadutos</p>
       <p>19 Não classificados</p>
       <p>20 Não classificados, junto ao solo</p>
-      <p>Para visualizarmos no MDS os pontos de acordo com esta classificação, defina o <strong>Campo Escalar</strong> correspondente em <strong>Properties &gt; Scalar Field</strong> selecionando
-			<strong>Classification</strong> com a camada <strong>MDS_color_3314-243 - cloud</strong> ativa.</p>
+      <p>Para visualizarmos no MDS os pontos de acordo com esta classificação, defina o Campo Escalar correspondente em Properties > Scalar Field selecionando
+			Classification com a camada MDS_color_3314-243 - cloud ativa.</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/73d63ca603287785.png?raw=true" width="567" height="367" alt="73d63ca603287785"></p>
-      <p>Observe em <strong>Properties &gt; SF Display Params</strong> que os valores atribuidos ao <strong>Campo Escalar</strong> agora em uso varia de <strong>2.00</strong> a
-			<strong>20.00</strong>. Podemos destacar em cor apenas os pontos classificados como edificação (<strong>6.00</strong>), restringindo o intervalo de valores para a aplicação da escala de cores
+      <p>Observe em Properties > SF Display Params que os valores atribuidos ao Campo Escalar agora em uso varia de 2.00 a
+			20.00. Podemos destacar em cor apenas os pontos classificados como edificação (6.00), restringindo o intervalo de valores para a aplicação da escala de cores
 			(movendo o "indicador semi-circular ou circular") conforme a seguir:</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/b19640be5aafd4b1.png?raw=true" width="567" height="368" alt="b19640be5aafd4b1"></p>
-      <p>Com o mesmo procedimento vamos selecionar agora para visualização apenas os pontos classificados como <strong>2.00</strong>, visualizando em cor apenas o terreno.
+      <p>Com o mesmo procedimento vamos selecionar agora para visualização apenas os pontos classificados como 2.00, visualizando em cor apenas o terreno.
 			Para poder visualizar o resultado desta nova operação, ajuste a tela de visualização para obter uma imagem da parte inferior do modelo
 			(isto se faz necessário pois os pontos com outras classificações escondem os pontos selecionados).</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/e072b65b69748467.png?raw=true" width="567" height="379" alt="e072b65b69748467"></p>
-      <p>Novamente em <strong>Edit &gt; Scalar fields &gt; Filter By Value</strong> e depois <strong>Export</strong> vamos criar uma camada apenas com pontos do terreno.
-			Renomeie esta camada (com um duplo clique sobre o nome da camada) como <strong>Terreno</strong>.</p>
+      <p>Novamente em Edit > Scalar fields > Filter By Value e depois Export vamos criar uma camada apenas com pontos do terreno.
+			Renomeie esta camada (com um duplo clique sobre o nome da camada) como Terreno.</p>
       <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/6e5167266d3cbf42.png?raw=true" width="567" height="364" alt="6e5167266d3cbf42"></p>
     <a name="3. Produzindo malha triangular (polígono)"></a>
 		<h3>3. Produzindo malha triangular (polígonos)</h3>
-     <p>Podemos com a camada <strong>Terreno</strong> gerar uma malha triangular (estamos usando os pontos do terreno por possuírem características mais favoráveis a geração de malha triangular do que,
-		 por exemplo, os classificados como vegetação), mas para não perder a camada <strong>Terreno</strong> vamos fazer antes duas cópias dela em
-		 <strong>Edit &gt; Clone</strong> (para testarmos opções de triangulação). Para viabilizar uma melhora na qualidade de visualização da malha a ser criada,
-		 vamos definir antes uma cor clara para todos os pontos desta camada em <strong>Edit &gt; Colors &gt; Set unique</strong>; defina um tom de amarelo como segue:</p>
+     <p>Podemos com a camada Terreno gerar uma malha triangular (estamos usando os pontos do terreno por possuírem características mais favoráveis a geração de malha triangular do que,
+		 por exemplo, os classificados como vegetação), mas para não perder a camada Terreno vamos fazer antes duas cópias dela em
+		 Edit > Clone (para testarmos opções de triangulação). Para viabilizar uma melhora na qualidade de visualização da malha a ser criada,
+		 vamos definir antes uma cor clara para todos os pontos desta camada em Edit > Colors > Set unique; defina um tom de amarelo como segue:</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/e878630e90abe77d.png?raw=true" width="567" height="368" alt="e878630e90abe77d"></p>
-     <p>Com a camada <strong>Terreno.clone</strong> selecionada produzimos a malha triangular em <strong>Edit &gt; Mesh &gt; Dlelaunay2.5D (XY plane)</strong>
-		 obtendo caixa de diálogo para definirmos o tamanho máximo do lado do triângulo da malha a ser gerada (com a opção <strong>0.00</strong> para não aplicar este limite).
-		 Vamos simular com a opção <strong>0.00</strong> (A) e com <strong>3.00</strong> (B); teremos os resultados (para melhor visualização da malha triangular, habilite a opção de sombreamento em
-		 <strong>Display &gt; Shaders & Filters &gt; EDL Shader</strong>; em <strong>Display &gt; Shaders & Filters &gt; Remove Filter</strong> você pode desabilitar a opção de sombreamento):</p>
+     <p>Com a camada Terreno.clone selecionada produzimos a malha triangular em Edit > Mesh > Dlelaunay2.5D (XY plane)
+		 obtendo caixa de diálogo para definirmos o tamanho máximo do lado do triângulo da malha a ser gerada (com a opção 0.00 para não aplicar este limite).
+		 Vamos simular com a opção 0.00 (A) e com 3.00 (B); teremos os resultados (para melhor visualização da malha triangular, habilite a opção de sombreamento em
+		 Display > Shaders & Filters > EDL Shader; em Display > Shaders & Filters > Remove Filter você pode desabilitar a opção de sombreamento):</p>
      <p>A<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/a06062d2a297bd2.png?raw=true" width="535" height="360" alt="a06062d2a297bd2"></p>
      <p>B<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/ee086391fa32ca15.png?raw=true" width="542" height="349" alt="ee086391fa32ca15"></p>
     <a name="4. Trabalhando com parte da nuvem de pontos"></a>
 		<h3>4. Trabalhando com parte da nuvem de pontos</h3>
-     <p>Vamos ajustar nossa tela com uma vista superior (barra de ferramentas <strong>View</strong> - ícone identificado com 1; ver figura a seguir) de nosso modelo, com o modo perspectiva desabilitado em
-		 <strong>Display &gt; Toggle Centered Perspective</strong> ( liga e desliga o modo perspectiva), e depois aproximar para a área de interesse.</p>
+     <p>Vamos ajustar nossa tela com uma vista superior (barra de ferramentas View - ícone identificado com 1; ver figura a seguir) de nosso modelo, com o modo perspectiva desabilitado em
+		 Display > Toggle Centered Perspective ( liga e desliga o modo perspectiva), e depois aproximar para a área de interesse.</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/91b5ad9252f35a33.png?raw=true" width="335" height="44" alt="91b5ad9252f35a33"></p>
      <p>Nosso objetivo agora é explorar um pouco mais os recursos de manipulação e visualização. Queremos olhar com mais atenção uma edificação em particular, o MASP como exemplo
-		 (lembre se de fazer este procedimento na cópia da camada original para preservá-la). Em uma nova camada <strong>MDS_color_3314-243 - cloud.clone</strong> poderemos em
-		 <strong>Edit &gt; Segment</strong> delimitar um polígono em torno desta edificação e dividir nossa nuvem de pontos em duas camadas; uma com os pontos internos a este polígono e a outra com os pontos restantes.
-		 Em <strong>Edit &gt; Segment</strong> abrimos caixa de ferramenta onde podemos trabalhar conforme a figura:
+		 (lembre se de fazer este procedimento na cópia da camada original para preservá-la). Em uma nova camada MDS_color_3314-243 - cloud.clone poderemos em
+		 Edit > Segment delimitar um polígono em torno desta edificação e dividir nossa nuvem de pontos em duas camadas; uma com os pontos internos a este polígono e a outra com os pontos restantes.
+		 Em Edit > Segment abrimos caixa de ferramenta onde podemos trabalhar conforme a figura:
 		 <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/8fcff270e697d424.png?raw=true" width="332" height="52" alt="8fcff270e697d424"></p>
-     <p><strong>1 -</strong> Abre função de desenhar polígono para referenciar segmentação da nuvem de pontos (botão esquerdo do mouse adiciona pontos ao polígono, o esquerdo encerra a definição do mesmo).
+     <p>1 - Abre função de desenhar polígono para referenciar segmentação da nuvem de pontos (botão esquerdo do mouse adiciona pontos ao polígono, o esquerdo encerra a definição do mesmo).
 		 Após definir o traçado do polígono de corte, se for do nosso interesse um novo ícone fica disponível permitindo salvar este polígono em nova
 		 (<img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/e11276cc7072aaff.png?raw=true" width="18" height="15" alt="e11276cc7072aaff"> ).</p>
-     <p><strong>2 -</strong> Define opção de alvo; no caso pontos internos ao polígono definido.</p>
-     <p><strong>3 -</strong> Finaliza a operação salvando o resultado.</p>
-     <p><strong>4 -</strong> Fecha a função.</p>
+     <p>2 - Define opção de alvo; no caso pontos internos ao polígono definido.</p>
+     <p>3 - Finaliza a operação salvando o resultado.</p>
+     <p>4 - Fecha a função.</p>
      <p><img src="images/Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_1037d2784a7ec1a3.png?raw=true" width="567" height="369" alt="Tutorial_B%C3%A1sico_RevisaoDANILO__e_V2%20(1)_html_1037d2784a7ec1a3"></p>
      <p>Resultando:</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/ba7af6322c97697e.png?raw=true" width="567" height="377" alt="ba7af6322c97697e"></p>
-     <p>Visualizando nuvem de pontos obtida sem e com o "shade" (<strong>Display &gt; Shaders & Filters &gt; EDL Shader</strong>):</p>
+     <p>Visualizando nuvem de pontos obtida sem e com o "shade" (Display > Shaders & Filters > EDL Shader):</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/6136faef21923cd5.png?raw=true" width="567" height="375" alt="6136faef21923cd5"></p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/fb86a360172df722.png?raw=true" width="567" height="369" alt="fb86a360172df722"></p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/a929444a61198cf1.png?raw=true" width="567" height="363" alt="a929444a61198cf1"></p>
-     <p>Queremos agora utilizar na barra de ferramentas <strong>View</strong> (ver figura a seguir) os comandos para nos fornecer a vista frontal do Masp
+     <p>Queremos agora utilizar na barra de ferramentas View (ver figura a seguir) os comandos para nos fornecer a vista frontal do Masp
 		 (na figura, ícone indicado em 2), ou lateral (3 ou 5).</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/91b5ad9252f35a33.png?raw=true" width="335" height="44" alt="91b5ad9252f35a33"></p>
      <p>Para isso será necessário rotacionar a camada de pontos que obtivemos (novamente fazendo uma cópia para não perder a camada do MASP sem rotação) de forma que a frente do terreno do MASP
-		 fique alinhado com o eixo X do sistema de coordenadas em uso em <strong>Edit &gt; Translate &gt; Rotate</strong>.</p>
+		 fique alinhado com o eixo X do sistema de coordenadas em uso em Edit > Translate > Rotate.</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/6b5b230e0b65d5a7.png?raw=true" width="567" height="357" alt="6b5b230e0b65d5a7"></p>
      <p>Ou:</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/68a40cb32c77637b.png?raw=true" width="567" height="370" alt="68a40cb32c77637b"></p>
@@ -183,19 +185,20 @@
      <p>Editando os valores de translado para termos as coordenadas deste trabalho compatível com as do anterior.</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/2cd48726bd2f220e.png?raw=true" width="567" height="253" alt="2cd48726bd2f220e"></p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/b06b2297f66bea21.png?raw=true" width="567" height="373" alt="b06b2297f66bea21"></p>
-     <p>Selecionando apenas alguns pontos, desta vez englobando partes de mais de um arquivo; selecionar as quatro nuvens de pontos utilizando (&lt;Crtl&gt; + clique) e criar polígono de corte
-		 englobando pontos em diversos arquivos, de forma semelhante ao explicado anteriormente (em <strong>Edit &gt; Segment</strong>).</p>
+     <p>Selecionando apenas alguns pontos, desta vez englobando partes de mais de um arquivo; selecionar as quatro nuvens de pontos utilizando (&lt;Crtl> + clique) e criar polígono de corte
+		 englobando pontos em diversos arquivos, de forma semelhante ao explicado anteriormente (em Edit > Segment).</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/a90e1893b8412961.png?raw=true" width="567" height="303" alt="a90e1893b8412961"></p>
-     <p>Agora clonar e unificar (<strong>Edit &gt; Clone</strong> e <strong>Edit &gt; Merge</strong>) antes de rotacionar nosso produto, para obtermos a elevação parcial da
+     <p>Agora clonar e unificar (Edit > Clone e Edit > Merge) antes de rotacionar nosso produto, para obtermos a elevação parcial da
 		 Av. Paulista da mesma forma que o feito com a elevação do MASP:</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/7cbf26c4d9ee43d7.png?raw=true" width="567" height="144" alt="7cbf26c4d9ee43d7"></p>
     <a name="6. Salvando"></a>
 		<h3>6. Salvando</h3>
-     <p>Em <strong>File &gt; Save</strong>, após selecionar todas as camadas existentes, podemos salvar todo nosso ambiente de trabalho e camadas no formato <strong>CloudCompare entities (*.bin)</strong> (temos ainda a opção <strong>DXF geometry (*.dxf)</strong>).</p>
-     <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/f08ee478420202ab.png?raw=true" width="210" height="176" alt="f08ee478420202ab"> <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/24ada039f30a34f6.png?raw=true" width="258" height="172" alt="24ada039f30a34f6"></p>
+     <p>Em File > Save, após selecionar todas as camadas existentes, podemos salvar todo nosso ambiente de trabalho e camadas no formato CloudCompare entities (*.bin) (temos ainda a opção DXF geometry (*.dxf)).</p>
+     <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/f08ee478420202ab.png?raw=true" width="210" height="176" alt="f08ee478420202ab">
+     <img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/24ada039f30a34f6.png?raw=true" width="258" height="172" alt="24ada039f30a34f6"></p>
      <p>Selecionando apenas uma camada de nuvens de pontos, temos as opções:</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/6d8d916ad4596e54.png?raw=true" width="567" height="362" alt="6d8d916ad4596e54"></p>
-     <p>E voltando um pouco, selecionando camada com malhas triangulares (<strong>Mesh</strong>), temos também diversas opções para salvar:</p>
+     <p>E voltando um pouco, selecionando camada com malhas triangulares (Mesh), temos também diversas opções para salvar:</p>
      <p><img src="https://github.com/DanMizuta/Tutorial-CloudCompare/blob/master/images/edc3cfeecca93363.png?raw=true" width="530" height="370" alt="edc3cfeecca93363"></p>
  </body>
 </html>
